@@ -1,7 +1,7 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { SITE } from "@/lib/site";
 
@@ -38,7 +38,7 @@ export function ChatWidget() {
     } catch {
       setMsgs((m) => [
         ...m,
-        { role: "assistant", text: `I couldn't reach the assistant. WhatsApp us: https://wa.me/${SITE.whatsapp}` },
+        { role: "assistant", text: `I could not reach the assistant. WhatsApp us: https://wa.me/${SITE.whatsapp}` },
       ]);
     } finally {
       setLoading(false);
@@ -54,7 +54,9 @@ export function ChatWidget() {
               <p className="font-semibold text-sm">Umang Assistant</p>
               <p className="text-xs text-white/70">Site help · WhatsApp handoff</p>
             </div>
-            <button type="button" aria-label="Close chat" onClick={() => setOpen(false)} className="text-white/80">✕</button>
+            <button type="button" aria-label="Close chat" onClick={() => setOpen(false)} className="text-white/80 text-lg">
+              ×
+            </button>
           </div>
           <div className="max-h-80 space-y-3 overflow-y-auto p-3 bg-mist">
             {msgs.map((m, i) => (
@@ -77,27 +79,34 @@ export function ChatWidget() {
               onKeyDown={(e) => e.key === "Enter" && send()}
               placeholder="Ask about services…"
             />
-            <button type="button" onClick={send} className="btn-primary !min-h-10 px-3 text-sm">Send</button>
+            <button type="button" onClick={send} className="btn-primary !min-h-10 px-3 text-sm">
+              Send
+            </button>
           </div>
           <div className="px-3 pb-3 flex gap-2">
-            <a className="btn-outline !min-h-9 text-xs flex-1" href={`https://wa.me/${SITE.whatsapp}`} target="_blank" rel="noreferrer">WhatsApp counsellor</a>
-            <a className="btn-outline !min-h-9 text-xs flex-1" href="/contact">Book counselling</a>
+            <a className="btn-outline !min-h-9 text-xs flex-1" href={`https://wa.me/${SITE.whatsapp}`} target="_blank" rel="noreferrer">
+              WhatsApp counsellor
+            </a>
+            <a className="btn-outline !min-h-9 text-xs flex-1" href="/contact">
+              Book counselling
+            </a>
           </div>
         </div>
       )}
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="ml-auto flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-white shadow-lg ring-2 ring-brand"
+        className="ml-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand shadow-lg ring-2 ring-white/30 hover:bg-brand-hover"
         aria-label="Open chat"
       >
         {open ? (
-          <span className="text-brand text-xl font-bold" aria-hidden>×</span>
+          <span className="text-white text-xl font-bold" aria-hidden>
+            ×
+          </span>
         ) : (
-          <Image src="/brand/umang-logo.png" alt="" width={56} height={56} className="h-14 w-14 object-cover" />
+          <Image src="/brand/umang-logo.png" alt="" width={28} height={28} className="h-7 w-7 object-contain" />
         )}
       </button>
     </div>
   );
 }
-

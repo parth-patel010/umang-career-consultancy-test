@@ -6,16 +6,21 @@ import { FaqJsonLd } from "@/components/seo/JsonLd";
 
 const HOW = [
   { t: "Share your goals", d: "Course interest, budget range, timeline, and family priorities." },
-  { t: "Profile & fit counselling", d: "Honest shortlist of countries and programs that match your profile." },
-  { t: "Applications & documents", d: "Admission support plus SOP/LOR/resume discipline." },
+  { t: "Profile and fit counselling", d: "Honest shortlist of countries and programs that match your profile." },
+  { t: "Applications and documents", d: "Admission support plus SOP/LOR/resume discipline." },
   { t: "Visa readiness", d: "Checklists, file review, and interview prep — no approval guarantees." },
 ];
 
 const WHY = [
-  { t: "Local Vadodara trust", d: "Meet us at Siddeshwar Plaza — counselling designed for students and parents together." },
-  { t: "One coordinated roadmap", d: "Admissions advice and visa documentation stay aligned to one plan." },
-  { t: "Honest fit conversations", d: "We discuss risk, cost, and timelines without inflated promises." },
-  { t: "End-to-end support", d: "Career → admission → funding talks → visa readiness under one roof." },
+  { t: "Local Vadodara trust", d: "Meet us at Siddeshwar Plaza — counselling for students and parents together.", tone: "lime" },
+  { t: "One coordinated roadmap", d: "Admissions advice and visa documentation stay aligned to one plan.", tone: "gold" },
+  { t: "Honest fit conversations", d: "We discuss risk, cost, and timelines without inflated promises.", tone: "lime" },
+  { t: "End-to-end support", d: "Career to admission to funding talks to visa readiness under one roof.", tone: "gold" },
+];
+
+const STORIES = [
+  { q: "They explained Canada vs UK in plain language for our family — no pressure sales.", a: "Parent, Vadodara" },
+  { q: "SOP feedback was practical and honest. We knew exactly what to fix before applying.", a: "Student applicant" },
 ];
 
 const FAQS = [
@@ -25,62 +30,76 @@ const FAQS = [
   { q: "How do I book counselling?", a: "Call or WhatsApp +91 9173186109, email umangcareer2022@gmail.com, or use the form on this page." },
 ];
 
+const DEST_BAND: Record<string, string> = {
+  canada: "from-[#E31937] to-[#FF0000]",
+  uk: "from-[#012169] to-[#C8102E]",
+  australia: "from-[#00008B] to-[#FF4500]",
+  usa: "from-[#3C3B6E] to-[#B22234]",
+  "new-zealand": "from-[#00247D] to-[#CC0000]",
+};
+
 export function HomePage() {
+  const [featured, ...rest] = SERVICES;
   return (
     <>
       <FaqJsonLd faqs={FAQS} />
-      {/* Dark cinematic hero */}
-      <section className="relative overflow-hidden bg-[var(--black)] text-white">
-        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_70%_20%,#1B4F9C_0%,transparent_50%),radial-gradient(circle_at_20%_80%,#E62D2D_0%,transparent_40%)]" />
+      <section className="surface-dark relative overflow-hidden bg-[var(--black)] min-h-[78vh] md:min-h-[88vh] flex items-center">
+        <div className="absolute inset-0" style={{ backgroundImage: "var(--glow-blue), var(--glow-red)" }} />
+        <div className="absolute inset-0 hero-grid" />
         <div className="container-page relative py-20 md:py-28">
-          <p className="badge bg-white/10 text-white/90 mb-4">Vadodara · Career & Study Abroad Consultancy</p>
-          <h1 className="font-display max-w-3xl fade-up text-white">
-            Study Abroad Consultancy Vadodara — Career, Admissions & Student Visa Guidance
+          <p className="badge bg-white/10 text-white/90 mb-5 fade-up">Vadodara · Career & Study Abroad</p>
+          <h1 className="font-display max-w-3xl fade-up text-white" style={{ animationDelay: "60ms" }}>
+            Your global education plan — with honest Vadodara counselling
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-white/85 fade-up" style={{ animationDelay: "80ms" }}>
-            Plan your global education journey with honest counselling — from course fit to university applications and visa readiness. No inflated promises.
+          <p className="mt-5 max-w-2xl text-lg text-white/85 fade-up" style={{ animationDelay: "120ms" }}>
+            From course fit to university applications and visa readiness. Clear guidance for students and parents — no inflated promises.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3 fade-up" style={{ animationDelay: "120ms" }}>
+          <div className="mt-8 flex flex-wrap gap-3 fade-up" style={{ animationDelay: "180ms" }}>
             <Link href="/contact" className="btn-primary">Book counselling</Link>
-            <Link href="/destinations" className="btn-secondary">Explore countries</Link>
+            <Link href="/destinations" className="btn-ghost">Explore countries</Link>
           </div>
-          <p className="mt-6 text-sm text-white/60">{SITE.phone} · {SITE.email}</p>
+          <div className="mt-8 flex flex-wrap gap-2 fade-up" style={{ animationDelay: "240ms" }}>
+            <span className="trust-chip">Google-listed consultancy</span>
+            <span className="trust-chip">New VIP Road, Vadodara</span>
+            <span className="trust-chip">Honest counselling</span>
+          </div>
+          <p className="mt-6 text-sm text-white/55">{SITE.phone} · {SITE.email}</p>
         </div>
       </section>
 
-      {/* Trust strip */}
       <Section mist>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {["Personalised Vadodara counselling", "Career → admission → visa roadmap", "Canada · UK · Australia focus", "Transparent process — no fake metrics"].map((t) => (
-            <div key={t} className="card p-4 text-sm font-semibold text-ink flex items-start gap-2">
-              <span className="text-lime text-lg">✓</span>
+          {["Personalised Vadodara counselling", "Career to admission to visa roadmap", "Canada · UK · Australia focus", "Transparent process — no fake metrics"].map((t) => (
+            <div key={t} className="card card-feature p-4 text-sm font-semibold text-ink flex items-start gap-3">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--accent-lime-soft)] text-lime text-sm font-bold">OK</span>
               <span>{t}</span>
             </div>
           ))}
         </div>
       </Section>
 
-      {/* Destinations */}
       <Section>
         <div className="flex items-end justify-between gap-4 mb-8">
           <div>
             <p className="text-sm font-semibold text-brand mb-2">Destinations</p>
             <h2 className="font-display">Where students from Vadodara plan next</h2>
           </div>
-          <Link href="/destinations" className="hidden sm:inline text-sm font-semibold text-brand hover:underline">View all →</Link>
+          <Link href="/destinations" className="hidden sm:inline text-sm font-semibold text-brand hover:underline">View all</Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {COUNTRIES.map((c) => (
-            <Link key={c.slug} href={`/destinations/${c.slug}`} className="card p-5 block">
-              <p className="text-2xl mb-2">{c.flag}</p>
-              <p className="font-display text-lg font-bold">Study in {c.name}</p>
-              <p className="mt-2 text-sm text-muted">{c.blurb}</p>
+            <Link key={c.slug} href={`/destinations/${c.slug}`} className="card card-feature overflow-hidden block group">
+              <div className={`h-24 bg-gradient-to-br ${DEST_BAND[c.slug] || "from-[var(--accent-blue)] to-[var(--black)]"} opacity-90`} />
+              <div className="p-5">
+                <p className="font-display text-lg font-bold">Study in {c.name}</p>
+                <p className="mt-2 text-sm text-muted">{c.blurb}</p>
+                <span className="mt-3 inline-block text-sm font-semibold text-brand group-hover:underline">Explore</span>
+              </div>
             </Link>
           ))}
         </div>
       </Section>
 
-      {/* How it works */}
       <Section mist>
         <h2 className="font-display mb-8">How it works</h2>
         <div className="grid gap-4 md:grid-cols-4">
@@ -94,116 +113,121 @@ export function HomePage() {
         </div>
       </Section>
 
-      {/* Services */}
       <Section>
         <h2 className="font-display mb-8">Services</h2>
-        <div className="grid gap-4 md:grid-cols-2">
-          {SERVICES.map((s) => (
+        <div className="md:hidden space-y-3">
+          {[...SERVICES, { href: "/visa/student-visa", title: "Student Visa Guidance", desc: "Checklists, file readiness, and interview prep — outcomes always depend on immigration decisions." }].map((s) => (
+            <Link key={s.href} href={s.href} className="card flex items-center gap-3 p-4">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--brand-red-soft)] text-brand font-bold">UA</span>
+              <span className="flex-1">
+                <span className="font-display font-bold block">{s.title}</span>
+                <span className="text-sm text-muted">{s.desc}</span>
+              </span>
+            </Link>
+          ))}
+        </div>
+        <div className="hidden md:grid md:grid-cols-3 gap-4">
+          <Link href={featured.href} className="card card-feature p-8 md:col-span-2 md:row-span-2 flex flex-col justify-between min-h-[260px]">
+            <div>
+              <p className="badge badge-red mb-4">Core service</p>
+              <p className="font-display text-2xl font-bold">{featured.title}</p>
+              <p className="mt-3 text-muted max-w-md">{featured.desc}</p>
+            </div>
+            <span className="mt-6 text-sm font-semibold text-brand">Learn more</span>
+          </Link>
+          {rest.map((s) => (
             <Link key={s.href} href={s.href} className="card p-5 block">
               <p className="font-display text-lg font-bold">{s.title}</p>
               <p className="mt-2 text-sm text-muted">{s.desc}</p>
-              <span className="mt-3 inline-block text-sm font-semibold text-brand">Learn more →</span>
+              <span className="mt-3 inline-block text-sm font-semibold text-brand">Learn more</span>
             </Link>
           ))}
-          <Link href="/visa/student-visa" className="card p-5 block md:col-span-2">
+          <Link href="/visa/student-visa" className="card p-5 block">
             <p className="font-display text-lg font-bold">Student Visa Guidance</p>
             <p className="mt-2 text-sm text-muted">Checklists, file readiness, and interview prep — outcomes always depend on immigration decisions.</p>
+            <span className="mt-3 inline-block text-sm font-semibold text-brand">Learn more</span>
           </Link>
         </div>
       </Section>
 
-      {/* Why Umang */}
       <Section mist>
         <h2 className="font-display mb-8">Why Umang</h2>
         <div className="grid gap-4 md:grid-cols-2">
           {WHY.map((w) => (
-            <div key={w.t} className="card p-5">
-              <p className="font-display font-bold text-lg">{w.t}</p>
-              <p className="mt-2 text-muted text-sm">{w.d}</p>
+            <div key={w.t} className="card p-5 flex gap-3">
+              <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold ${w.tone === "gold" ? "bg-[var(--accent-gold-soft)] text-gold" : "bg-[var(--accent-lime-soft)] text-lime"}`}>OK</span>
+              <div>
+                <p className="font-display font-bold">{w.t}</p>
+                <p className="mt-1 text-sm text-muted">{w.d}</p>
+              </div>
             </div>
           ))}
         </div>
       </Section>
 
-      {/* Offers teaser */}
       <Section>
         <div className="card p-8 md:p-10 bg-gradient-to-r from-[var(--brand-red-soft)] to-white border-brand/20 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
             <p className="badge badge-gold mb-3">Limited seasonal</p>
             <p className="text-sm font-semibold text-brand mb-2">Current offers</p>
-            <h2 className="font-display text-2xl">Counselling sessions & seasonal offers</h2>
+            <h2 className="font-display text-2xl">Counselling sessions and seasonal offers</h2>
             <p className="mt-2 text-muted max-w-xl">Check live offers from our team — claim online and we will follow up on WhatsApp.</p>
           </div>
           <Link href="/contact" className="btn-primary shrink-0">Talk to us</Link>
         </div>
       </Section>
 
-      {/* Success stories */}
       <Section mist>
-        <div className="flex items-end justify-between mb-8">
-          <h2 className="font-display">Success stories</h2>
-          <Link href="/testimonials" className="text-sm font-semibold text-brand">See more →</Link>
-        </div>
-        <div className="grid gap-4 md:grid-cols-3">
-          {[
-            { n: "Student family, Vadodara", t: "Clear country shortlist and document plan before deposits." },
-            { n: "Master’s aspirant", t: "SOP structure and university shortlist aligned to budget." },
-            { n: "Parent counselling", t: "Honest ROI discussion for Canada vs UK timing." },
-          ].map((s) => (
-            <div key={s.n} className="card p-5">
-              <p className="text-gold text-lg">★★★★★</p>
-              <p className="mt-3 text-sm text-ink">{s.t}</p>
-              <p className="mt-4 text-xs font-semibold text-muted">{s.n}</p>
-              <p className="text-xs text-muted mt-1">Placeholder — real testimonials coming soon.</p>
-            </div>
+        <h2 className="font-display mb-8">Success stories</h2>
+        <div className="grid gap-4 md:grid-cols-2">
+          {STORIES.map((s) => (
+            <blockquote key={s.q} className="card p-6 border-l-4 border-[var(--accent-gold)] rounded-l-none">
+              <p className="text-ink leading-relaxed">&ldquo;{s.q}&rdquo;</p>
+              <footer className="mt-4 text-sm font-semibold text-muted">— {s.a}</footer>
+            </blockquote>
           ))}
         </div>
+        <p className="mt-4 text-xs text-muted">Example placeholders — replace with client-approved testimonials.</p>
       </Section>
 
-      {/* IELTS soft */}
       <Section>
-        <div className="card p-6 md:p-8 border-dashed">
-          <h2 className="font-display text-xl">English test readiness</h2>
-          <p className="mt-2 text-muted max-w-2xl">
-            Many destinations need proof of English. We help you understand score expectations for your shortlist — without hard-selling coaching packages on this page.
-          </p>
-          <Link href="/contact" className="mt-4 inline-flex text-sm font-semibold text-brand hover:underline">Ask during counselling →</Link>
+        <div className="card p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6">
+          <div className="flex-1">
+            <p className="badge badge-blue mb-3">IELTS readiness</p>
+            <h2 className="font-display">English test planning, without the hard sell</h2>
+            <p className="mt-2 text-muted">We help you understand score targets for your shortlist. Dedicated IELTS coaching pages stay on hold until offering is confirmed.</p>
+          </div>
+          <Link href="/contact" className="btn-outline shrink-0">Ask a counsellor</Link>
         </div>
       </Section>
 
-      {/* FAQ */}
       <Section mist>
-        <h2 className="font-display mb-8">FAQ</h2>
-        <div className="space-y-3 max-w-3xl">
+        <h2 className="font-display mb-8">FAQs</h2>
+        <div className="space-y-3">
           {FAQS.map((f) => (
-            <details key={f.q} className="card p-4 group">
-              <summary className="font-semibold cursor-pointer list-none flex justify-between gap-4">
+            <details key={f.q} className="card p-5 group">
+              <summary className="font-display font-bold cursor-pointer list-none flex justify-between gap-4">
                 {f.q}
-                <span className="text-muted group-open:rotate-45 transition">+</span>
+                <span className="text-brand">+</span>
               </summary>
               <p className="mt-3 text-sm text-muted">{f.a}</p>
             </details>
           ))}
         </div>
-        <Link href="/faq" className="inline-block mt-6 text-sm font-semibold text-brand">All FAQs →</Link>
       </Section>
 
-      {/* Final CTA + lead form */}
       <Section>
-        <div className="grid gap-10 lg:grid-cols-2 items-start">
+        <div className="grid gap-8 lg:grid-cols-2 items-start">
           <div>
-            <h2 className="font-display">Ready to talk?</h2>
-            <p className="mt-3 text-muted">Book a free counselling session. Parent or student — tell us where you are in the journey.</p>
-            <ul className="mt-6 space-y-2 text-sm">
-              <li><a className="font-semibold text-brand" href={`tel:${SITE.phoneTel}`}>{SITE.phone}</a></li>
-              <li><a className="font-semibold" href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
-              <li className="text-muted">{SITE.fullAddress}</li>
-            </ul>
+            <p className="badge badge-gold mb-3">Book a session</p>
+            <h2 className="font-display">Ready to talk through your options?</h2>
+            <p className="mt-3 text-muted">Tell us whether you are a student or parent — we will follow up on WhatsApp or phone.</p>
+            <p className="mt-4 text-sm font-semibold">{SITE.phone}</p>
+            <p className="text-sm text-muted">{SITE.fullAddress}</p>
           </div>
-          <LeadForm source="home" />
+          <LeadForm />
         </div>
       </Section>
     </>
   );
 }
-

@@ -18,25 +18,22 @@ export function Header({ dark = false }: { dark?: boolean }) {
   const [open, setOpen] = useState(false);
   return (
     <header
-      className={`sticky top-0 z-50 h-16 border-b ${
+      className={`sticky top-0 z-50 h-[72px] border-b ${
         dark
-          ? "border-white/10 bg-black/70 text-white backdrop-blur-md"
-          : "border-line bg-white/90 text-ink backdrop-blur-md"
+          ? "border-white/10 bg-black/72 text-white backdrop-blur-md"
+          : "border-line bg-white/92 text-ink backdrop-blur-md"
       }`}
     >
       <div className="container-page flex h-full items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2 shrink-0">
+        <Link href="/" className="flex items-center gap-2.5 shrink-0">
           <Image
             src="/brand/umang-logo.png"
-            alt="Umang Career Consultancy logo"
-            width={120}
+            alt="Umang Career Consultancy"
+            width={140}
             height={40}
-            className="h-10 w-auto object-contain"
+            className="h-9 w-auto object-contain sm:h-10"
             priority
           />
-          <span className="font-display font-bold text-sm sm:text-base leading-tight">
-            Umang Career
-          </span>
         </Link>
         <nav className="hidden lg:flex items-center gap-5 text-sm font-medium">
           {NAV.map((n) => (
@@ -57,18 +54,14 @@ export function Header({ dark = false }: { dark?: boolean }) {
           <Link href="/contact" className="btn-primary text-sm px-4 !min-h-10">
             Book counselling
           </Link>
-          <button
-            type="button"
-            className="lg:hidden ml-1 p-2"
-            aria-label="Menu"
-            onClick={() => setOpen((v) => !v)}
-          >
+          <button type="button" className="lg:hidden p-2" aria-label="Menu" onClick={() => setOpen((v) => !v)}>
             <span className="block w-5 h-0.5 bg-current mb-1" />
             <span className="block w-5 h-0.5 bg-current mb-1" />
             <span className="block w-5 h-0.5 bg-current" />
           </button>
         </div>
       </div>
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-[var(--brand-red)] to-transparent opacity-70" />
       {open && (
         <div className={`lg:hidden border-t ${dark ? "border-white/10 bg-black" : "border-line bg-white"}`}>
           <div className="container-page py-4 flex flex-col gap-3">
@@ -77,9 +70,8 @@ export function Header({ dark = false }: { dark?: boolean }) {
                 {n.label}
               </Link>
             ))}
-            <a href={`https://wa.me/${SITE.whatsapp}`} className="btn-outline text-center" target="_blank" rel="noreferrer">WhatsApp</a>
             <Link href="/contact" onClick={() => setOpen(false)} className="btn-primary text-center">
-              Book free counselling
+              Book counselling
             </Link>
           </div>
         </div>
@@ -87,4 +79,3 @@ export function Header({ dark = false }: { dark?: boolean }) {
     </header>
   );
 }
-
