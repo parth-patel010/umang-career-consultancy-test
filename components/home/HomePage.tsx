@@ -34,7 +34,7 @@ export function HomePage() {
         <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_70%_20%,#1B4F9C_0%,transparent_50%),radial-gradient(circle_at_20%_80%,#E62D2D_0%,transparent_40%)]" />
         <div className="container-page relative py-20 md:py-28">
           <p className="badge bg-white/10 text-white/90 mb-4">Vadodara · Career & Study Abroad Consultancy</p>
-          <h1 className="font-display max-w-3xl fade-up">
+          <h1 className="font-display max-w-3xl fade-up text-white">
             Study Abroad Consultancy Vadodara — Career, Admissions & Student Visa Guidance
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-white/85 fade-up" style={{ animationDelay: "80ms" }}>
@@ -43,7 +43,6 @@ export function HomePage() {
           <div className="mt-8 flex flex-wrap gap-3 fade-up" style={{ animationDelay: "120ms" }}>
             <Link href="/contact" className="btn-primary">Book counselling</Link>
             <Link href="/destinations" className="btn-secondary">Explore countries</Link>
-            <a href={`https://wa.me/${SITE.whatsapp}`} className="btn-secondary" target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
           <p className="mt-6 text-sm text-white/60">{SITE.phone} · {SITE.email}</p>
         </div>
@@ -130,6 +129,7 @@ export function HomePage() {
       <Section>
         <div className="card p-8 md:p-10 bg-gradient-to-r from-[var(--brand-red-soft)] to-white border-brand/20 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
+            <p className="badge badge-gold mb-3">Limited seasonal</p>
             <p className="text-sm font-semibold text-brand mb-2">Current offers</p>
             <h2 className="font-display text-2xl">Counselling sessions & seasonal offers</h2>
             <p className="mt-2 text-muted max-w-xl">Check live offers from our team — claim online and we will follow up on WhatsApp.</p>
@@ -206,3 +206,4 @@ export function HomePage() {
     </>
   );
 }
+

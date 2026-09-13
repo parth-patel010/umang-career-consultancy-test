@@ -11,7 +11,7 @@ export function Footer() {
           <p className="text-white/80 text-sm leading-relaxed">
             Career counselling, study abroad guidance, and visa preparation support in Vadodara.
           </p>
-          <NAP className="text-white/85 [&_a]:text-white" />
+          <NAP className="text-white/85 [&_a]:text-white [&_p]:text-white/70" />
         </div>
         <div>
           <p className="font-semibold mb-3">Services</p>
@@ -54,3 +54,5 @@ export function Footer() {
     </footer>
   );
 }
+
+

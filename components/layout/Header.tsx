@@ -29,9 +29,9 @@ export function Header({ dark = false }: { dark?: boolean }) {
           <Image
             src="/brand/umang-logo.png"
             alt="Umang Career Consultancy logo"
-            width={40}
+            width={120}
             height={40}
-            className="rounded-full bg-black"
+            className="h-10 w-auto object-contain"
             priority
           />
           <span className="font-display font-bold text-sm sm:text-base leading-tight">
@@ -87,3 +87,4 @@ export function Header({ dark = false }: { dark?: boolean }) {
     </header>
   );
 }
+

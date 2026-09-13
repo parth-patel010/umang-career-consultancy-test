@@ -68,7 +68,15 @@ body {
 h1, h2, h3, .font-display {
   font-family: var(--font-display), var(--font-body), system-ui, sans-serif;
   letter-spacing: -0.02em;
+}
+/* Default headings inherit; light surfaces get ink explicitly */
+.surface-light h1, .surface-light h2, .surface-light h3, .surface-light .font-display,
+.card h1, .card h2, .card h3, .card .font-display {
   color: var(--ink);
+}
+.text-white h1, .text-white h2, .text-white h3, .text-white .font-display,
+section.text-white h1, section.text-white h2, section.text-white h3, section.text-white .font-display {
+  color: #fff !important;
 }
 
 h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; font-weight: 800; }
@@ -192,3 +200,12 @@ a { color: inherit; text-decoration: none; }
 .border-line { border-color: var(--line); }
 .hover\:bg-brand-hover:hover { background: var(--brand-red-hover); }
 .hover\:text-brand:hover { color: var(--brand-red); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .fade-up { animation: none !important; }
+  .card { transition: none; }
+  .card:hover { transform: none; }
+  .btn-primary, .btn-secondary, .btn-outline { transition: none; }
+}
+

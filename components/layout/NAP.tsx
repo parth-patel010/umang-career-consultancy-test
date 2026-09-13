@@ -13,7 +13,7 @@ export function NAP({ className = "" }: { className?: string }) {
           {SITE.email}
         </a>
       </p>
-      <p className="text-muted leading-relaxed">{SITE.fullAddress}</p>
+      <p className="leading-relaxed opacity-80">{SITE.fullAddress}</p>
     </div>
   );
 }

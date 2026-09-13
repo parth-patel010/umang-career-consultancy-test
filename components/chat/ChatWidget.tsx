@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { useState } from "react";
 import { SITE } from "@/lib/site";
 
@@ -87,11 +88,16 @@ export function ChatWidget() {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="ml-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand text-white shadow-lg hover:bg-brand-hover"
+        className="ml-auto flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-white shadow-lg ring-2 ring-brand"
         aria-label="Open chat"
       >
-        {open ? "✕" : "💬"}
+        {open ? (
+          <span className="text-brand text-xl font-bold" aria-hidden>×</span>
+        ) : (
+          <Image src="/brand/umang-logo.png" alt="" width={56} height={56} className="h-14 w-14 object-cover" />
+        )}
       </button>
     </div>
   );
 }
+
