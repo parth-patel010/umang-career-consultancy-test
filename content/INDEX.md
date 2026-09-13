@@ -52,6 +52,30 @@ Address was expanded from public business posts referencing First Floor 25 Sidde
 
 ---
 
+## Destinations Batch (22–27)
+
+| # | File | URL path | One-line summary |
+|---|---|---|---|
+| 22 | `destinations.md` | `/destinations` | Destinations hub: CA/UK/AU/USA/NZ live cards, Germany hold, comparison guidance + CTA |
+| 23 | `destinations-canada.md` | `/destinations/canada` | Deep: Study in Canada from Vadodara — fit, levels, intakes, docs, visa overview, FAQs, NAP CTA |
+| 24 | `destinations-uk.md` | `/destinations/uk` | Deep: Study in UK from Vadodara — same structure as Canada |
+| 25 | `destinations-australia.md` | `/destinations/australia` | Deep: Study in Australia from Vadodara — same structure as Canada |
+| 26 | `destinations-usa.md` | `/destinations/usa` | Deep: Study in USA from Vadodara — same structure as Canada |
+| 27 | `destinations-new-zealand.md` | `/destinations/new-zealand` | Deep: Study in New Zealand from Vadodara — same structure as Canada |
+
+**Notes:** Germany is HOLD (thin claims avoided). USA & New Zealand deep pages published (hub updated from “coming soon” to live). Visa guidance is not legal advice; no approval guarantees. IELTS = score planning only (no coaching claim).
+
+---
+
+## Process & Universities Batch (28–29)
+
+| # | File | URL path | One-line summary |
+|---|---|---|---|
+| 28 | `process.md` | `/process` | End-to-end 7-step study-abroad process matching home; useful stub-to-solid |
+| 29 | `universities.md` | `/universities` | STUB: honest profile-based shortlisting framing; no partner lists; points to admission service |
+
+---
+
 ## Optional High-Value Extras
 
 | # | File | URL path | One-line summary |
@@ -67,12 +91,21 @@ Address was expanded from public business posts referencing First Floor 25 Sidde
 ```
 / (home)
 ├── /about
+├── /process
+├── /universities          (stub — profile-based shortlisting)
 ├── /services
 │   ├── /services/career-counselling
 │   ├── /services/university-admission
 │   ├── /services/sop-lor-resume
 │   └── /services/education-loan-forex
 ├── /study-abroad
+├── /destinations
+│   ├── /destinations/canada
+│   ├── /destinations/uk
+│   ├── /destinations/australia
+│   ├── /destinations/usa
+│   ├── /destinations/new-zealand
+│   └── /destinations/germany      (HOLD — thin/hold)
 ├── /visa
 │   ├── /visa/student-visa
 │   ├── /visa/visitor-visa
@@ -99,6 +132,9 @@ Address was expanded from public business posts referencing First Floor 25 Sidde
 6. **Secondary phone** `9712610086` appeared in some public posts; primary site NAP uses client-provided `+91 9173186109` only unless client authorises adding the second number.
 7. **Website** umangcareerconsultancy.com returned 502 during research — content drafted from client brief + public listings + competitor structure study (not copied).
 8. Visa pages include “guidance not legal advice” disclaimers.
+9. **Destinations batch** — Canada, UK, Australia, USA, New Zealand deep pages published; Germany HOLD. Hub USA/NZ live (no longer “coming soon”). No fake partner lists, success rates, or invented fees.
+10. **Universities page** — stub only by design; deepen only with client-verified institution info.
+11. **Process page** — mirrors homepage 7 steps; keep in sync if home process copy changes.
 
 ---
 

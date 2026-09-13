@@ -1,20 +1,22 @@
-> **Content outline:** Overview → Who it’s for → Core services → Journey map → Local benefits → Comparison notes → FAQ → CTA/NAP (Lite form kit)
-
-<!-- Design note: primary CTA buttons use brand red #E62D2D -->
-
-# Career & Study Abroad Services in Vadodara | Umang Career Consultancy
+# Education Consultancy Vadodara | Career & Study Abroad Services
 path: /services
-meta_title: Education Consultancy Services Vadodara | Umang Career
-meta_description: Career consultancy & education consultancy in Vadodara — counselling, university admission, SOP/LOR, loans, forex & student visa consultants. Call +91 9173186109.
+meta_title: Education Consultancy Vadodara | Career Consultancy Services
+meta_description: Education consultancy Vadodara & career consultancy Vadodara — counselling, admissions, SOP/LOR, loans, forex & student visa guidance. Umang Career Consultancy. Call +91 9173186109.
 primary_keyword: education consultancy Vadodara
-secondary_keywords: career consultancy Vadodara, study abroad consultancy Vadodara, student visa consultants Vadodara
-h1: Study Abroad & Career Consultancy Services in Vadodara
+secondary_keywords: career consultancy Vadodara, study abroad consultancy Vadodara, student visa consultants Vadodara, Umang Career Consultancy Vadodara
+h1: Education Consultancy Vadodara — Complete Career & Study Abroad Services
+
+> Content outline: Design note → Overview (+ NAP CTAs) → Who Our Services Are For → Core Service Categories → How Services Connect → Benefits of Local Vadodara Consultancy → What’s Typically Included → Popular Destination Focus (CA→UK→AU→US→NZ→DE) → Process Snapshot → FAQ → Strong CTA (NAP)
+
+<!-- Design note (PM/UI): Primary CTA buttons use brand red #E62D2D. Keep Call / WhatsApp / Enquire as primary actions on this hub. -->
 
 ## Overview
 
-**Umang Career Consultancy Vadodara** offers end-to-end guidance as your local **education consultancy** and **career consultancy** for students and families who want to study, visit, or accompany loved ones abroad. Our services are designed as a connected journey — not isolated tasks — so your counselling, applications, funding conversations, and visa readiness stay consistent.
+Umang Career Consultancy Vadodara offers end-to-end **education consultancy** and **career consultancy** for students and families who want to study, visit, or accompany loved ones abroad. As a local **study abroad consultancy Vadodara** families can visit in person, our services are designed as a connected journey — not isolated tasks — so counselling, applications, funding conversations, and visa readiness stay consistent.
 
 **Talk to us:** [+91 9173186109](tel:+919173186109) · [WhatsApp](https://wa.me/919173186109) · [umangcareer2022@gmail.com](mailto:umangcareer2022@gmail.com)
+
+**Office (NAP):** FF-25 Shree Siddeshwar Plaza, Beside Super Bakery New Vip Road, KhodiyarNagar, Vadodara 390019
 
 ---
 
@@ -24,14 +26,14 @@ h1: Study Abroad & Career Consultancy Services in Vadodara
 - Graduates planning master’s, MBA, or specialised postgraduate programs
 - Working professionals seeking career-aligned overseas education
 - Parents and spouses planning visitor or dependent visa pathways
-- Applicants who need structured documentation and interview preparation
+- Applicants who need structured documentation and interview preparation — including those seeking **student visa consultants Vadodara** for process clarity
 
 ---
 
 ## Our Core Service Categories
 
 ### 1. Career Counselling
-Understand your strengths, interests, budget, and realistic country/course options before you spend on applications.  
+Understand your strengths, interests, budget, and realistic country/course options before you spend on applications — the foundation of our career consultancy Vadodara practice.  
 **Learn more →** [/services/career-counselling](/services/career-counselling)
 
 **Best if you need:** clarity after 12th/graduation, country comparison, ROI-focused shortlisting.
@@ -54,8 +56,8 @@ Guidance on funding conversations and remittance support for tuition and related
 
 **Best if you need:** clarity on how to fund fees and transfer money compliantly.
 
-### 5. Visa Guidance Hub (Student Visa Consultants in Vadodara)
-Student, visitor, and spouse/dependent visa pathways with checklists and process coaching — practical support from **student visa consultants in Vadodara**.  
+### 5. Visa Guidance Hub
+Student, visitor, and spouse/dependent visa pathways with checklists and process coaching — practical support from student visa consultants Vadodara applicants can speak with directly.  
 **Learn more →** [/visa](/visa)
 
 **Explore:**
@@ -72,7 +74,7 @@ Counselling → Shortlist → Applications → Documents (SOP/LOR/CV)
     → Funding & Forex → Visa File → Interview Prep → Pre-departure
 ```
 
-Many delays happen when these stages are handled by different advisors with conflicting advice. We keep one roadmap so your story remains consistent from university application to visa interview.
+Many delays happen when these stages are handled by different advisors with conflicting advice. Our study abroad consultancy Vadodara approach keeps one roadmap so your story remains consistent from university application to visa interview.
 
 ---
 
@@ -88,7 +90,7 @@ We start with *your* academics, finances, and goals — not a one-size brochure 
 Checklists, file naming consistency, and timeline reminders reduce last-minute errors.
 
 ### Honest eligibility conversations
-If a destination or program is a weak fit, we say so early and discuss alternatives.
+If a destination or program is a weak fit, we say so early and discuss alternatives — including language-score planning for your shortlist (coaching is not provided by us; see counselling for current options).
 
 ---
 
@@ -110,14 +112,14 @@ Exact deliverables vary by service package — confirm during counselling.
 
 ## Popular Destination Focus
 
-We commonly support applications and visa guidance related to:
+We commonly support applications and visa guidance related to (preferred order):
 
-- United Kingdom
-- Canada
-- United States
-- Australia
-- New Zealand
-- Select European study and travel pathways
+1. **Canada** — study in Canada from Vadodara  
+2. **United Kingdom** — study in UK from Vadodara  
+3. **Australia** — study in Australia from Vadodara  
+4. **United States** — study in USA from Vadodara  
+5. **New Zealand** — study in New Zealand from Vadodara  
+6. **Germany** — study in Germany from Vadodara (thin claims; profile-fit discussion only)
 
 → Destination decision guide: [/resources/how-to-choose-study-destination](/resources/how-to-choose-study-destination)
 
@@ -139,7 +141,7 @@ We commonly support applications and visa guidance related to:
 Yes. Many clients need targeted help. Tell us your current stage and we will recommend the right scope.
 
 ### Do you work with students outside Vadodara?
-Yes — remote counselling via call/WhatsApp is often possible. Local students can also visit our New VIP Road office.
+Yes — remote counselling via call/WhatsApp is often possible. Local students can also visit our KhodiyarNagar / New Vip Road office.
 
 ### How early should I start?
 For study abroad, start 6–12 months before your target intake when possible. Visitor/spouse timelines vary by country — ask us for a realistic calendar.
@@ -150,6 +152,9 @@ We guide preparation and review readiness. You remain responsible for the accura
 ### Do you guarantee admissions or visas?
 No. We provide professional guidance. Final decisions are made by institutions and government authorities.
 
+### Do you provide IELTS coaching?
+No. We support **language-score planning** only (target scores vs shortlist). Dedicated coaching is pending client confirmation and is not claimed as an Umang service today.
+
 ### Where can I read educational guides?
 Visit [/resources](/resources) for SOP tips, visa interview preparation, career-after-12th guidance, and more.
 
@@ -157,12 +162,12 @@ Visit [/resources](/resources) for SOP tips, visa interview preparation, career-
 
 ## Strong CTA
 
-Ready to map your next step?
+Ready to map your next step with an education consultancy Vadodara families trust?
 
 - **Call:** [+91 9173186109](tel:+919173186109)  
 - **WhatsApp:** [Chat now](https://wa.me/919173186109)  
 - **Email:** [umangcareer2022@gmail.com](mailto:umangcareer2022@gmail.com)  
 - **Office:** FF-25 Shree Siddeshwar Plaza, Beside Super Bakery New Vip Road, KhodiyarNagar, Vadodara 390019  
-- **Contact form suggestions:** [/contact](/contact)
+- **Contact form kits:** [/contact](/contact)
 
 **Internal links:** [/services/career-counselling](/services/career-counselling) · [/services/university-admission](/services/university-admission) · [/visa](/visa) · [/about](/about) · [/testimonials](/testimonials)

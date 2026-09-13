@@ -1,13 +1,16 @@
-# Contact Umang Career Consultancy
+# Contact Umang Career Consultancy Vadodara
 path: /contact
-meta_title: Contact Us | Umang Career Consultancy Vadodara
-meta_description: Call, WhatsApp or visit Umang Career Consultancy in Vadodara. FF-25 Shree Siddeshwar Plaza, New VIP Road. Phone +91 9173186109.
-primary_keyword: Umang Career Consultancy contact
-h1: Contact Us — We’re Here to Help
+meta_title: Contact Umang Career Consultancy Vadodara | Call & Visit
+meta_description: Contact Umang Career Consultancy Vadodara — FF-25 Shree Siddeshwar Plaza, Beside Super Bakery New Vip Road, KhodiyarNagar, Vadodara 390019. Phone +91 9173186109 | Email umangcareer2022@gmail.com.
+primary_keyword: Umang Career Consultancy Vadodara contact
+secondary_keywords: study abroad consultancy Vadodara, career consultancy Vadodara, education consultancy Vadodara, student visa consultants Vadodara
+h1: Contact Umang Career Consultancy Vadodara
+
+> Content outline: Get in Touch (full NAP) → Map Note → Form Kit Lite → Form Kit Full → Office Hours → What to Prepare → Response Expectations → Other Ways We Help → CTA Strip
 
 ## Get in Touch
 
-Ready to discuss study abroad, admissions, documentation, or visas? Reach Umang Career Consultancy using any channel below.
+Ready to discuss study abroad, career counselling, university admissions, documentation, or visas? Reach **Umang Career Consultancy Vadodara** — your local study abroad consultancy, education consultancy, career consultancy, and student visa consultants Vadodara families can call or visit.
 
 ### Phone / WhatsApp
 - **Phone:** [+91 9173186109](tel:+919173186109)  
@@ -16,11 +19,13 @@ Ready to discuss study abroad, admissions, documentation, or visas? Reach Umang 
 ### Email
 - **Email:** [umangcareer2022@gmail.com](mailto:umangcareer2022@gmail.com)
 
-### Office Address (NAP)
+### Office Address (Mandatory NAP)
 **Umang Career Consultancy**  
-FF-25, Shree Siddeshwar Plaza, Beside Super Bakery, New VIP Road, Vadodara, Gujarat 390019
+FF-25 Shree Siddeshwar Plaza, Beside Super Bakery New Vip Road, KhodiyarNagar, Vadodara 390019  
 
-*Address expanded from public client/business references (FF-25 / First Floor 25, Siddeshwar Plaza, beside Super Bakery, New VIP Road, Vadodara 390019). Confirm pin-drop with the team if needed for navigation apps.*
+**Phone** +91 9173186109 | **Email** umangcareer2022@gmail.com
+
+*Use this NAP string consistently across the site, Google Business Profile, and directories.*
 
 ---
 
@@ -28,31 +33,46 @@ FF-25, Shree Siddeshwar Plaza, Beside Super Bakery, New VIP Road, Vadodara, Guja
 
 Embed a Google Map pin for:
 
-`FF-25, Shree Siddeshwar Plaza, New VIP Road, Vadodara, Gujarat 390019`
+`FF-25 Shree Siddeshwar Plaza, Beside Super Bakery New Vip Road, KhodiyarNagar, Vadodara 390019`
 
-Suggested map query: **Shree Siddeshwar Plaza New VIP Road Vadodara** (then mark First Floor 25 / beside Super Bakery).
+Suggested map query: **Shree Siddeshwar Plaza New Vip Road KhodiyarNagar Vadodara** (then mark FF-25 / beside Super Bakery).
 
 ---
 
-## Suggested Contact Form Fields
+## Form Kits (For Web / PM)
 
-For the website form, capture:
+Document **both** kits below. Use Lite on sticky/mobile quick-enquiry; use Full on this Contact page and long-form CTAs.
+
+### Form Kit — Lite (quick enquire)
 
 | Field | Type | Required |
 |---|---|---|
-| Full name | text | Yes |
-| Mobile (WhatsApp-ready) | tel | Yes |
-| Email | email | Yes |
-| City | text | Yes |
-| Service interest | select: Career Counselling / University Admission / SOP-LOR-Resume / Education Loan-Forex / Student Visa / Visitor Visa / Spouse Visa / Other | Yes |
-| Preferred destination (if any) | text/select | No |
-| Target intake / travel month | text | No |
-| Message / questions | textarea | Yes |
-| Consent checkbox | “I agree to be contacted regarding my enquiry” | Yes |
+| Name | text | Yes* |
+| Phone | tel | Yes* |
+| Student \| Parent | select / radio | Yes* |
+| Country / Goal | text or select | Yes* |
+| Consent | checkbox: “I agree to be contacted regarding my enquiry” | Yes* |
+
+**Lite purpose:** fastest path from ad/landing CTA to a callback. Route to phone/WhatsApp follow-up.
+
+### Form Kit — Full (contact page)
+
+Includes everything in Lite, plus:
+
+| Field | Type | Required |
+|---|---|---|
+| WhatsApp toggle | checkbox / switch: “Same number on WhatsApp” (or alternate WhatsApp number) | No |
+| Email | email | Recommended |
+| Intake | text/select (e.g. Jan / May / Sep / Other / Not sure) | No |
+| Preferred time to talk | text/select (Morning / Afternoon / Evening) | No |
+| Message | textarea | No (encourage detail) |
+| *(from Lite)* Name*, Phone*, Student\|Parent*, Country/Goal*, Consent* | — | Yes* |
+
+**Full purpose:** richer qualification for career consultancy / study abroad / visa enquiries before the first counselling call.
 
 **Form routing suggestion:** email submissions to `umangcareer2022@gmail.com` + WhatsApp notification workflow if available.
 
-Primary CTA buttons on form success page:
+Primary CTA buttons on form success page (brand red `#E62D2D` for primary actions — see Design note on Home/Services):
 - Call [+91 9173186109](tel:+919173186109)
 - WhatsApp [https://wa.me/919173186109](https://wa.me/919173186109)
 
@@ -72,9 +92,10 @@ Please call/WhatsApp before visiting for document reviews.
 - Recent marksheets / degree certificates  
 - Passport status (front/back copies if available)  
 - Rough budget range  
-- Preferred countries/courses  
+- Preferred countries/courses (e.g. study in Canada, UK, Australia, USA, New Zealand, or Germany from Vadodara)  
 - Any prior offer letters or refusal letters  
 - Questions list from parents/sponsors  
+- Language-test scorecard if already taken (we plan target scores; we do not provide IELTS coaching)
 
 Guides to read first: [/resources](/resources)
 
@@ -89,6 +110,7 @@ We aim to respond to calls and WhatsApp messages during working hours as quickly
 ## Other Ways We Help Online
 
 - Services overview: [/services](/services)  
+- Study abroad hub: [/study-abroad](/study-abroad)  
 - Visa hub: [/visa](/visa)  
 - FAQs: [/faq](/faq)  
 - About: [/about](/about)
@@ -97,9 +119,9 @@ We aim to respond to calls and WhatsApp messages during working hours as quickly
 
 ## CTA Strip
 
-**Start your conversation today.**
+**Start your conversation today with Umang Career Consultancy Vadodara.**
 
 - Call [+91 9173186109](tel:+919173186109)  
 - WhatsApp [now](https://wa.me/919173186109)  
 - Email [umangcareer2022@gmail.com](mailto:umangcareer2022@gmail.com)  
-- Visit FF-25, Shree Siddeshwar Plaza, Beside Super Bakery, New VIP Road, Vadodara, Gujarat 390019
+- Visit FF-25 Shree Siddeshwar Plaza, Beside Super Bakery New Vip Road, KhodiyarNagar, Vadodara 390019
